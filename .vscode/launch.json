@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "file:///C:/Users/xcl/Documents/VSCode/%E5%AF%BC%E8%88%AA%E8%81%9A%E5%90%88%E7%BD%91%E7%AB%99/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
