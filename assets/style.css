@@ -1,91 +1,113 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    margin:0;
+
+body {
+    margin: 0;
     padding: 0;
     background-color: #0a3d62;
 }
-.searchbox{
-    width:24em;
+
+.searchbox {
+    width: 28em;
     height: 2em;
-   
+
 }
-.searchbox i{
+
+.searchbox i {
     background-image: url(./search.png);
     background-size: 30px 30px;
     width: 30px;
     height: 36px;
 
     margin-right: -28px;
-    position:absolute;
+    position: absolute;
 }
-.searchbox input{
+
+.searchbox input {
     display: inline-block;
     width: 100%;
-    height:100%;
+    height: 100%;
     font-size: 1.25em;
     padding-left: 28px;
     border-radius: 5px;
     background: #82ccdd;
     border: none;
 }
-.searchbox input:focus{
-    border:1px solid #079992;
+
+.searchbox input:focus {
+    border: 1px solid #079992;
     background: #78e08f;
     outline: none;
 }
-.middle{
-   position: fixed;
-   left:50%;
-   top:22%;
-   transform: translate(-50%,-50%);
+
+.middle {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%, -50%);
 }
-.catalog{
-    width: 10em;
+
+.clearfloat {
+    clear: both;
+}
+
+.catalog:nth-of-type(2) {
+    float: left;
+}
+
+.catalog:nth-of-type(3) {
+    float: right;
+}
+
+.catalog {
+    width: 11em;
     /* background-color: #3c6382; */
-    background:linear-gradient(#82ccdd,#336378);
+    background: linear-gradient(#82ccdd, #336378);
     float: left;
     border: 1px solid #343434;
     box-shadow: 4px 8px 8px 0 rgba(30, 50, 30, 0.4);
     border-radius: 5px;
     margin: 1.5em 2em;
 }
-.catalog:hover{
+
+.catalog:hover {
     background: none;
     background-color: #38ada9;
 }
 
-.catalog-title{
-display: block;
-font-size: 2em;
-letter-spacing: 8px;
-text-align: center;
-color:#009522;
+.catalog-title {
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #009522;
 }
 
-.item{
-    margin:10px 10px;
+.item {
+    margin: 10px 10px;
     position: relative;
 }
-.item a{
-    color:#ffdead;
+
+.item a {
+    color: #ffdead;
     text-decoration: none;
     display: inline-block;
     width: 90%;
     padding-left: 22%;
 }
-.item a:hover{
-    color:#f2c629;
+
+.item a:hover {
+    color: #f2c629;
 }
 
 
 /* a 带边框特效 */
 .item a::before,
-.item a::after{
+.item a::after {
     /* background-color:yellow; */
     display: block;
-    width:10px;
+    width: 10px;
     height: 8px;
     content: "";
     position: absolute;
@@ -93,66 +115,188 @@ color:#009522;
     opacity: 0;
 
 }
-.item a::before{
-    left:2px;
-    top:0;
-    border-left:2px solid #b71540;
-    border-top:2px solid #b71540;
+
+.item a::before {
+    left: 2px;
+    top: 0;
+    border-left: 2px solid #b71540;
+    border-top: 2px solid #b71540;
 }
-.item a:hover::before{
-    left:-4px;
-    top:-2px;
+
+.item a:hover::before {
+    left: -4px;
+    top: -2px;
     opacity: 1;
 }
-.item a::after{
-    right:10px;
+
+.item a::after {
+    right: 10px;
     bottom: 0;
-    border-right:2px solid #b71540;
-    border-bottom:2px solid #b71540;
+    border-right: 2px solid #b71540;
+    border-bottom: 2px solid #b71540;
 }
-.item a:hover::after{
-    right:0;
+
+.item a:hover::after {
+    right: 0;
     bottom: 0;
     opacity: 1;
 }
 
 /* a 带边框特效 */
 
-
-.item-icon{
+.item-icon {
     display: inline-block;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
-    width: 20%;
+    width: 17%;
     height: 100%;
     top: 0;
-    left:0; 
-    border-radius: 3px;
+    left: 0;
+    border-radius: 6px;
 }
+
 /* 首项 特别显示 */
-.item:first-of-type{
+.item:first-of-type {
     text-align: center;
 }
-.item:first-of-type a{
-padding: 0;
-margin:0;
+
+.item:first-of-type a {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
-.item:first-of-type .item-icon{
+
+.item:first-of-type .item-icon {
     position: static;
     display: block;
-    width:4em;
-    height: 4em;
-    margin-left:29px;
+    width: 3em;
+    height: 3em;
+    margin-left: calc(3em - 2px);
+}
+/* media */
+@media screen and (max-width:880px){
+    .searchbox {
+        width: 20em;
+    }
+}
+@media screen and (max-width:750px){
+    .clearfloat {
+        clear: none;
+    }
+    
+    .catalog:nth-of-type(2) {
+        float: left;
+    }
+    
+    .catalog:nth-of-type(3) {
+        float: left;
+    }
+
+    .middle {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+
 }
 /* --------- end---------- */
 
-.zhihu{
+.zhihu {
     background-image: url(./icons/zhihu.png);
 }
-.baidu{
+
+.baiduhanyu,
+.baidutranslate,
+.baidu {
     background-image: url(./icons/baidu.png);
 }
-.baiduzhidao{
+
+.baiduzhidao {
     background-image: url(./icons/baiduzhidao.png);
+}
+
+.mba {
+    background-image: url(./icons/mbalib.png);
+}
+
+.douban {
+    background-image: url(./icons/douban.png);
+}
+
+.tieba {
+    background-image: url(./icons/tieba.png);
+}
+
+.github {
+    background-image: url(./icons/github.png);
+}
+
+.v2ex {
+    background-image: url(./icons/v2ex.png);
+}
+
+.stackoverflow {
+    background-image: url(./icons/stackoverflow.png);
+}
+
+.w3cschool {
+    background-image: url(./icons/w3school.png);
+}
+
+.cssdict {
+    background-image: url(./icons/cssdict.ico);
+}
+
+.qichacha {
+    background-image: url(./icons/qichacha.png);
+}
+
+.python3-cookbook{
+    background-image: url(./icons/python3-cookbook.png);
+}
+
+.django{
+    background-image: url(./icons/django.ico);
+}
+.iconfont{
+    background-image: url(./icons/iconfont.png);
+}
+.taobao{
+    background-image: url(./icons/taobao.png);
+}
+.jingdong{
+    background-image: url(./icons/jingdong.png);
+}
+.amazon{
+    background-image: url(./icons/amazon.png);
+}
+.alibaba{
+background-image: url(./icons/1688.png);
+}
+
+.bilibili{
+background-image: url(./icons/bilibili.png);
+}
+.tencentvedio{
+    background-image: url(./icons/qqv.png);
+}
+.btdx{
+    background-image: url(./icons/btdx.ico);
+}
+.dytt{
+    background-image: url(./icons/dytt.ico)
+}
+.vdisk{
+    background-image: url(./icons/vdisk.png);
+}
+.youku{
+    background-image:url(./icons/youku.png);
+}
+.iqiyi{
+    background-image:url(./icons/iqiyi.png);
 }
