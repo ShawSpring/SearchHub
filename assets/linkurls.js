@@ -89,6 +89,10 @@ var searchURL = {
         "search": "http://www.xiami.com/search?key=%keyword%",
         "home": "http://www.xiami.com"
     },
+    "wikipediaen": {
+        "search": "http://en.wikipedia.org/w/index.php?search=%keyword%",
+        "home": "http://en.wikipedia.org"
+    },
     "wikipediazh": {
         "search": "http://zh.wikipedia.org/w/index.php?search=%keyword%",
         "home": "http://zh.wikipedia.org"
@@ -168,10 +172,6 @@ var searchURL = {
     "github": {
         "search": "https://github.com/search?q=%keyword%",
         "home": "https://github.com"
-    },
-    "wikipediaen": {
-        "search": "http://en.wikipedia.org/w/index.php?search=%keyword%",
-        "home": "http://en.wikipedia.org"
     },
     "archdaily": {
         "search": "https://www.archdaily.com/search/projects/text/%keyword%",
@@ -269,11 +269,11 @@ var searchURL = {
         "search": "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=site%3Anews.163.com%20%keyword%&oq=%keyword%",
         "home": "http://news.163.com"
     },
-    "cnn": {
+    "cnn": { //
         "search": "https://edition.cnn.com/search/?size=10&q=%keyword%",
         "home": "http://cnn.com"
     },
-    "bbcnews": {
+    "bbcnews": { //
         "search": "http://www.bbc.co.uk/search/news/?q=%keyword%",
         "home": "http://www.bbc.co.uk"
     },
@@ -281,7 +281,7 @@ var searchURL = {
         "search": "http://www.ap.org/Search/SearchResults?searchkeywords=%keyword%",
         "home": "http://www.ap.org"
     },
-    "reuters": {
+    "reuters": { //路透社
         "search": "http://www.reuters.com/search?blob=%keyword%",
         "home": "http://www.reuters.com"
     },
@@ -437,19 +437,34 @@ var searchURL = {
         "search": "http://www.awwwards.com/search-websites?text=%keyword%",
         "home": "http://www.awwwards.com"
     },
-    "myfonts": {
+    "myfonts": { 
         "search": "http://www.myfonts.com/search/%keyword%",
         "home": "http://www.myfonts.com"
     },
-    "qyer": {
+    "qyer": { /// 穷游网
         "search": "http://search.qyer.com/index?wd=%keyword%",
         "home": "http://search.qyer.com"
     },
-    "notcot": {
-        "search": "http://www.notcot.org/?action=search&query=%keyword%",
-        "home": "http://www.notcot.org"
+    
+    "tools": { //
+        "search": "https://tool.lu/search/?query=%keyword%",
+        "home": "https://tool.lu/"
     },
-    "weibopic": {
+    "xunleicang": { // 迅雷仓
+        "search": "https://www.xunleicang.com/vod-search/?wd=%keyword%",
+        "home": "https://www.xunleicang.com/"
+    },
+    
+    "piaohua": { // 飘花资源网
+        "search": "https://www.piaohua.com/plus/search.php?kwtype=0&keyword=%keyword%&searchtype=%E5%BD%B1%E8%A7%86%E6%90%9C%E7%B4%A2",
+        "home": "https://www.piaohua.com/"
+    },
+    
+    "vueapi": { //
+        "search": "",
+        "home": "https://cn.vuejs.org/v2/api/"
+    },
+    "weibopic": { // 
         "search": "http://s.weibo.com/pic/%keyword%",
         "home": "http://photo.weibo.com/"
     },
@@ -470,7 +485,7 @@ var searchURL = {
         "search": "http://www.baidu.com/baidu?word=&ie=utf-8&tn=bds&cl=3&ct=2097152&si=www.qiushibaike.com&s=on%keyword%",
         "home": "http://www.qiushibaike.com"
     },
-    "lofter": {
+    "lofter": { //
         "search": "http://www.lofter.com/tag/%keyword%",
         "home": "http://www.lofter.com"
     },
@@ -510,7 +525,7 @@ var searchURL = {
         "search": "https://imgur.com/search?q=pyra%keyword%",
         "home": "http://imgur.com"
     },
-    "dxy": {
+    "dxy": { // 丁香园
         "search": "http://search.dxy.cn/?words=%keyword%",
         "home": "http://dxy.cn"
     },
@@ -626,7 +641,7 @@ var searchURL = {
         "search": "http://www.howcast.com/search?term=%keyword%",
         "home": "http://www.howcast.com"
     },
-    "xiachufang": {
+    "xiachufang": { // 下厨房
         "search": "http://www.xiachufang.com/search/?keyword=%keyword%",
         "home": "http://www.xiachufang.com"
     },
@@ -782,7 +797,7 @@ var searchURL = {
         "search": "http://en.wikibooks.org/w/index.php?search=%keyword%",
         "home": "http://en.wikibooks.org"
     },
-    "wikinews": {
+    "wikinews": { // wiki 新闻
         "search": "http://en.wikinews.org/w/index.php?search=%keyword%",
         "home": "http://en.wikinews.org"
     },
@@ -882,7 +897,7 @@ var searchURL = {
         "search": "http://about.me/search/#!/q/%keyword%",
         "home": "http://about.me"
     },
-    "appledev": {
+    "appledev": { //apple developer
         "search": "https://developer.apple.com/search/index.php?q=%keyword%",
         "home": "https://developer.apple.com"
     },
@@ -1187,7 +1202,7 @@ var searchURL = {
         "search": "http://list.mogujie.com/s?q=%keyword%",
         "home": "http://www.mogujie.com"
     },
-    "suning": {
+    "suning": { //
         "search": "http://search.suning.com/%keyword%/",
         "home": "http://www.suning.com/"
     },
@@ -1219,7 +1234,7 @@ var searchURL = {
         "search": "https://www.google.com/#newwindow=1&safe=strict&q=%keyword%",
         "home": "https://www.google.com"
     },
-    "yhd": {
+    "yhd": { // 一号店
         "search": "http://search.yhd.com/c-/k%keyword%",
         "home": "http://www.yhd.com/"
     },

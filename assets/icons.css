@@ -228,3 +228,56 @@ background-image: url(./icons/bilibili.png);
 .suning{
     background-image:url(./icons/suning.png);
 }
+.yhd{
+    background-image: url(./icons/yhd.png);
+}
+.reuters{
+    background-image:url(./icons/reuters.png);
+}
+.wikinews{
+    background-image:url(./icons/wikinews.png);
+}
+.cnn{
+    background-image: url(./icons/cnn.png);
+}
+.appledev{
+    background-image:url(./icons/appledev.png);
+}
+.lofter{
+    background-image:url(./icons/lofter.png);
+}
+.weibopic{
+    background-image: url(./icons/weibopic.png);
+}
+.vueapi{
+    background-image:url(./icons/vue.png);
+}
+.tools{
+    background-image: url(./icons/tools.png);
+}
+.xunleicang{
+    background-image: url(./icons/xunleicang.png);
+}
+.piaohua{
+    background-image: url(./icons/piaohua.png);
+}
+.bdwpss{
+    background-image: url(./icons/baiduyun.png);
+}
+.xiachufang{
+    background-image:url(./icons/xiachufang.png);
+}
+.wikipediazh,
+.wikipediaen
+{
+    background-image: url(./icons/wikipedia.png)
+}
+.dxy{
+    background-image: url(./icons/dxy.png);
+}
+.jianshu{
+    background-image: url(./icons/jianshu.png);
+}
+.googleplus{
+    background-image:url(./icons/googleplus.png);
+}
