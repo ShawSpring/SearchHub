@@ -16,37 +16,37 @@ function search_on_link(item, text) {
 }
 
 var searchURL = {
-    "iconfont":{//
-        "search":"https://www.iconfont.cn/search/index?searchType=icon&q=%keyword%",
-        "home":"https://www.iconfont.cn"
+    "iconfont": { //
+        "search": "https://www.iconfont.cn/search/index?searchType=icon&q=%keyword%",
+        "home": "https://www.iconfont.cn"
     },
-    "dytt":{//
-     "search":"http://s.ygdy8.com/plus/so.php?typeid=1&keyword=%keyword%",
-     "home":"https://www.ygdy8.com/",
-     "gbk":true
+    "dytt": { //
+        "search": "http://s.ygdy8.com/plus/so.php?typeid=1&keyword=%keyword%",
+        "home": "https://www.ygdy8.com/",
+        "gbk": true
     },
-    "btdx":{ //
-        "search":"https://www.btdx8.com/?s=%keyword%",
-        "home":"https://www.btdx8.com/"
+    "btdx": { //
+        "search": "https://www.btdx8.com/?s=%keyword%",
+        "home": "https://www.btdx8.com/"
     },
-    "django":{//
-        "search":"https://docs.djangoproject.com/zh-hans/2.1/search/?q=%keyword%",
-        "home":"https://docs.djangoproject.com/zh-hans/2.1/"
+    "django": { //
+        "search": "https://docs.djangoproject.com/zh-hans/2.1/search/?q=%keyword%",
+        "home": "https://docs.djangoproject.com/zh-hans/2.1/"
     },
-    "baiduhanyu":{//
-        "search":"https://dict.baidu.com/s?wd=%keyword%&from=home",
-        "home":"https://dict.baidu.com/"
+    "baiduhanyu": { //
+        "search": "https://dict.baidu.com/s?wd=%keyword%&from=home",
+        "home": "https://dict.baidu.com/"
     },
-    "jquery":{ //
-        "search":"http://hemin.cn/jq/%keyword%.html",
-        "home":"http://hemin.cn/jq/"
+    "jquery": { //
+        "search": "http://hemin.cn/jq/%keyword%.html",
+        "home": "http://hemin.cn/jq/"
     },
     //  这个不好弄
-    "cssdict":{ //
-        "search":"https://www.w3cschool.cn/css/dict",
-        "home":"https://www.w3cschool.cn/css/dict"
+    "cssdict": { //
+        "search": "https://www.w3cschool.cn/css/dict",
+        "home": "https://www.w3cschool.cn/css/dict"
     },
- 
+
     "douban": { //
         "search": "http://www.douban.com/search?q=%keyword%",
         "home": "http://www.douban.com"
@@ -210,37 +210,25 @@ var searchURL = {
         "home": "http://www.amazon.cn"
     },
 
-    "taobao": {//
+    "taobao": { //
         "search": "http://s.taobao.com/search?q=%keyword%",
         "home": "http://taobao.com"
     },
-    "jingdong": {//
+    "jingdong": { //
         "search": "http://search.jd.com/Search?keyword=%keyword%&enc=utf-8",
         "home": "http://jd.com"
     },
-    "dianping": {
+    "dianping": { //
         "search": "http://www.dianping.com/search/keyword/1/0_%keyword%",
         "home": "http://www.dianping.com"
     },
-    "twitter": {
+    "twitter": { //
         "search": "https://twitter.com/search?q=%keyword%",
         "home": "https://twitter.com"
-    },
-    "baubauhaus": {
-        "search": "http://www.baubauhaus.com/search?q=%keyword%",
-        "home": "http://www.baubauhaus.com"
-    },
-    "designspiration": {
-        "search": "http://designspiration.net/tag/%keyword%",
-        "home": "http://designspiration.net"
     },
     "chromeexts": { //
         "search": "https://chrome.google.com/webstore/search/%keyword%",
         "home": "https://chrome.google.com/webstore"
-    },
-    "uxmatters": {
-        "search": "http://www.uxmatters.com/mt/mt-ftsearch.cgi?IncludeBlogs=1&limit=40&search=%keyword%",
-        "home": "http://www.uxmatters.com"
     },
     "v2ex": { //
         "search": "https://google.com/search?q=site:v2ex.com %keyword%",
@@ -277,175 +265,51 @@ var searchURL = {
         "search": "http://www.bbc.co.uk/search/news/?q=%keyword%",
         "home": "http://www.bbc.co.uk"
     },
-    "ap": {
-        "search": "http://www.ap.org/Search/SearchResults?searchkeywords=%keyword%",
-        "home": "http://www.ap.org"
-    },
+
     "reuters": { //路透社
         "search": "http://www.reuters.com/search?blob=%keyword%",
         "home": "http://www.reuters.com"
     },
-    "iciba": {
-        "search": "http://www.iciba.com/%keyword%",
-        "home": "http://www.iciba.com"
-    },
-    "googlenewscn": {
+
+    "googlenewscn": { //
         "search": "https://google.com/search?hl=zh-CN&gl=cn&tbm=nws&q=%keyword%",
         "home": "http://news.google.com.hk/"
     },
-    "ifeng": {
+    "ifeng": { //
         "search": "http://search.ifeng.com/sofeng/search.action?q=%keyword%",
         "home": "http://ifeng.com"
     },
-    "verge": {
-        "search": "http://www.theverge.com/search?q=%keyword%",
-        "home": "http://www.theverge.com"
-    },
-    "ifanr": {
-        "search": "http://www.ifanr.com/search?query=%keyword%",
-        "home": "http://ifanr.com"
-    },
-    "techcrunch": {
-        "search": "http://techcrunch.com/search/%keyword%",
-        "home": "http://techcrunch.com"
-    },
-    "tnw": {
-        "search": "http://thenextweb.com/?s=%keyword%",
-        "home": "http://thenextweb.com"
-    },
-    "engadget": {
-        "search": "https://www.engadget.com/search/?search-terms=%keyword%",
-        "home": "http://www.engadget.com"
-    },
-    "gdgt": {
-        "search": "http://gdgt.com/search/%keyword%",
-        "home": "http://gdgt.com"
-    },
-    "ign": {
-        "search": "http://ap.ign.com/en/pages/search/?search=%keyword%",
-        "home": "http://ign.com"
-    },
-    "gamespot": {
-        "search": "http://www.gamespot.com/search/?qs=%keyword%",
-        "home": "http://www.gamespot.com"
-    },
-    "gametrailers": {
-        "search": "http://www.gametrailers.com/search?keywords=%keyword%",
-        "home": "http://www.gametrailers.com"
-    },
-    "polygon": {
-        "search": "http://www.polygon.com/search?q=%keyword%",
-        "home": "http://www.polygon.com"
-    },
-    "guardian": {
-        "search": "http://www.guardian.co.uk/search?q=%keyword%",
-        "home": "http://www.guardian.co"
-    },
-    "gigaom": {
-        "search": "http://gigaom.com/?s=%keyword%",
-        "home": "http://gigaom.com"
-    },
-    "36kr": {
-        "search": "http://36kr.com/search/articles/%keyword%",
-        "home": "http://www.36kr.com"
-    },
-    "ali213": {
-        "search": "http://so.ali213.net/search.asp?wd=%keyword%",
-        "home": "http://ali213.net"
-    },
-    "kickstarter": {
-        "search": "http://www.kickstarter.com/projects/search?utf8=%E2%9C%93&term=%keyword%",
-        "home": "http://www.kickstarter.com"
-    },
-    "cnet": {
-        "search": "http://www.cnet.com/1770-5_1-0.html?query=%keyword%",
-        "home": "http://www.cnet.com"
-    },
-    "allthingsd": {
-        "search": "http://allthingsd.com/?s=%keyword%",
-        "home": "http://allthingsd.com"
-    },
-    "creativeapplications": {
-        "search": "http://www.creativeapplications.net/index.php?s=%keyword%",
-        "home": "http://www.creativeapplications.net"
-    },
-    "visualizing": {
-        "search": "http://www.visualizing.org/search/node/%keyword%",
-        "home": "http://www.visualizing.org"
-    },
-    "visualy": {
-        "search": "http://visual.ly/search/node?keys=%keyword%",
-        "home": "http://visual.ly"
-    },
-    "aiga": {
-        "search": "http://designarchives.aiga.org/#/entries//_/grid/relevance/asc/0/65/90%keyword%",
-        "home": "http://designarchives.aiga.org"
-    },
-    "imdb": {
+
+    "imdb": { //
         "search": "http://www.imdb.com/find?q=%keyword%",
         "home": "http://www.imdb.com"
     },
-    "ehow": {
-        "search": "http://www.ehow.com/search.html?s=%keyword%",
-        "home": "http://www.ehow.com"
+
+    "freeimages": { //
+        "search": "https://cn.freeimages.com/search/%keyword%",
+        "home": "https://cn.freeimages.com/"
     },
-    "logowikia": {
-        "search": "http://logos.wikia.com/wiki/index.php?search=%keyword%",
-        "home": "http://logos.wikia.com"
+    "huaban":{ //
+        "search":"https://huaban.com/search/?q=%keyword%",
+        "home":"https://huaban.com/"
     },
-    "wikia": {
-        "search": "http://www.wikia.com/index.php?search=%keyword%",
-        "home": "http://www.wikia.com"
+    "ivsky":{ //天堂图片网
+        "search":"https://www.ivsky.com/search.php?q=%keyword%",
+        "home":"https://www.ivsky.com/"
     },
-    "internetarchive": {
-        "search": "http://archive.org/search.php?query=%keyword%",
-        "home": "http://archive.org"
+    "qianku": { //千库网
+        "search": "", // 需要汉字转拼音
+        "home": "https://588ku.com/"
     },
-    "etsy": {
-        "search": "http://www.etsy.com/search?q=%keyword%",
-        "home": "http://www.etsy.com"
-    },
-    "svpply": {
-        "search": "https://svpply.com/shop?search=%keyword%",
-        "home": "https://svpply.com"
-    },
-    "deviantart": {
-        "search": "http://www.deviantart.com/browse/all/?section=&global=1&q=%keyword%",
-        "home": "http://deviantart.com"
-    },
-    "logopond": {
-        "search": "http://logopond.com/search/?search=%keyword%",
-        "home": "http://logopond.com"
-    },
-    "society6": {
-        "search": "http://society6.com/search/?q=%keyword%",
-        "home": "http://society6.com"
-    },
-    "moma": {
-        "search": "http://www.moma.org/search?query=%keyword%",
-        "home": "http://www.moma.org"
-    },
-    "9gag": {
-        "search": "https://9gag.com/search?query=%keyword%",
-        "home": "https://9gag.com"
-    },
-    "weheartit": {
-        "search": "http://weheartit.com/search?utf8=%E2%9C%93&ac=0&query=%keyword%",
-        "home": "http://weheartit.com"
-    },
-    "awwwards": {
-        "search": "http://www.awwwards.com/search-websites?text=%keyword%",
-        "home": "http://www.awwwards.com"
-    },
-    "myfonts": { 
-        "search": "http://www.myfonts.com/search/%keyword%",
-        "home": "http://www.myfonts.com"
+    "picjumbo":{
+        "search":"https://picjumbo.com/?s=%keyword%",
+        "home":"https://picjumbo.com/"
     },
     "qyer": { /// 穷游网
         "search": "http://search.qyer.com/index?wd=%keyword%",
         "home": "http://search.qyer.com"
     },
-    
+
     "tools": { //
         "search": "https://tool.lu/search/?query=%keyword%",
         "home": "https://tool.lu/"
@@ -454,12 +318,12 @@ var searchURL = {
         "search": "https://www.xunleicang.com/vod-search/?wd=%keyword%",
         "home": "https://www.xunleicang.com/"
     },
-    
+
     "piaohua": { // 飘花资源网
         "search": "https://www.piaohua.com/plus/search.php?kwtype=0&keyword=%keyword%&searchtype=%E5%BD%B1%E8%A7%86%E6%90%9C%E7%B4%A2",
         "home": "https://www.piaohua.com/"
     },
-    
+
     "vueapi": { //
         "search": "",
         "home": "https://cn.vuejs.org/v2/api/"
@@ -489,30 +353,14 @@ var searchURL = {
         "search": "http://www.lofter.com/tag/%keyword%",
         "home": "http://www.lofter.com"
     },
-    "zcool": {
-        "search": "http://www.zcool.com.cn/tosearch.do?world=%keyword%",
-        "home": "http://www.zcool.com"
-    },
-    "issuu": {
-        "search": "http://issuu.com/search?q=%keyword%",
-        "home": "http://issuu.com"
-    },
-    "slideshare": {
-        "search": "https://www.slideshare.net/search/slideshow?q=%keyword%",
-        "home": "https://www.slideshare.net"
-    },
-    "ukgov": {
-        "search": "https://www.gov.uk/search?q=%keyword%",
-        "home": "https://www.gov.uk"
-    },
+
+
+
     "bing": {
         "search": "http://www.bing.com/search?q=%keyword%",
         "home": "http://www.bing.com"
     },
-    "delicious": {
-        "search": "https://delicious.com/search?p=%keyword%",
-        "home": "https://delicious.com"
-    },
+
     "doubanmovie": {
         "search": "http://movie.douban.com/subject_search?search_text=%keyword%",
         "home": "http://movie.douban.com"
@@ -533,7 +381,7 @@ var searchURL = {
         "search": "http://stu.dahuawang.com/?s=%keyword%",
         "home": "http://stu.dahuawang.com"
     },
-    "tieba": {//
+    "tieba": { //
         "search": "http://tieba.baidu.com/f?ie=utf-8&kw=%keyword%",
         "home": "http://tieba.baidu.com"
     },
@@ -625,7 +473,7 @@ var searchURL = {
         "search": "http://knowyourmeme.com/search?q=%keyword%",
         "home": "http://knowyourmeme.com"
     },
-    "bilibili": {//
+    "bilibili": { //
         "search": "http://www.bilibili.com/search?keyword=%keyword%",
         "home": "http://www.bilibili.com"
     },
@@ -649,9 +497,9 @@ var searchURL = {
         "search": "http://www.acfun.cn/search/?#query=%keyword%",
         "home": "http://www.acfun.cn"
     },
-    "mgtv":{
-        "search":"https://so.mgtv.com/so/k-%keyword%",
-        "home":"https://www.mgtv.com/"
+    "mgtv": {
+        "search": "https://so.mgtv.com/so/k-%keyword%",
+        "home": "https://www.mgtv.com/"
     },
     "500px": {
         "search": "http://500px.com/search?q=%keyword%",
@@ -913,7 +761,7 @@ var searchURL = {
         "search": "http://code4app.com/search/%keyword%",
         "home": "http://code4app.com"
     },
-    "steam": {  //
+    "steam": { //
         "search": "http://store.steampowered.com/search/?snr=1_4_4__12&term=%keyword%",
         "home": "http://store.steampowered.com"
     },
@@ -1033,9 +881,9 @@ var searchURL = {
         "search": "http://so.iqiyi.com/so/q_%keyword%",
         "home": "http://iqiyi.com"
     },
-    "bdwpss":{
-        "search":"http://ff.6wu.cc:81/",
-        "home":"http://ff.6wu.cc:81/so?keyword=%keyword%&page=1&url_path=so"
+    "bdwpss": {
+        "search": "http://ff.6wu.cc:81/",
+        "home": "http://ff.6wu.cc:81/so?keyword=%keyword%&page=1&url_path=so"
     },
     "smzdm": {
         "search": "http://search.smzdm.com/?c=home&s=%keyword%",
@@ -1360,11 +1208,11 @@ var searchURL = {
         "search": "https://www.pixiv.net/search.php?word=%keyword%",
         "home": "https://www.pixiv.net"
     },
-    "qichacha": {//
+    "qichacha": { //
         "search": "https://www.qichacha.com/search?key=%keyword%",
         "home": "https://www.qichacha.com"
     },
-    "qixin": {// 启信宝
+    "qixin": { // 启信宝
         "search": "https://www.qixin.com/search?key=%keyword%&page=1",
         "home": "https://www.qixin.com/"
     },
