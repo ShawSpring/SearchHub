@@ -15,12 +15,46 @@
     flex-basis: auto;
 }
 
+/*                searchbox                  */
 .searchbox {
     align-self: center;
-    margin:0 120px;
+    margin: 0 120px;
 }
-@media screen and (max-width:1000px){
-    .searchbox{
-        margin:0;
+
+@media screen and (max-width:1000px) {
+    .searchbox {
+        margin: 0;
     }
+}
+
+/*                  extend-items 隐藏 动态显示                          */
+.catalog {
+    position: relative; /* 作为  。extend-items的容器 */
+}
+
+.extend-items {
+    width:calc(100% + 2px); /*  要让它随着父元素 .catalog变动而变动 2px是父元素左右边框的宽度*/
+    display: none;
+    margin:0;
+}
+
+.catalog:hover .extend-items {
+
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    z-index: 1;
+    top: 100%;
+    left: -1px;
+    right: 30px;
+    /* 去掉上边框 */
+    border-top: none;
+    /* 去掉圆角 */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: -10px;
+}
+.catalog:hover{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
