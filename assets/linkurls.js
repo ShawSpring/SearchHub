@@ -557,7 +557,7 @@ var searchURL = {
         "search": "http://www.douban.com/app/search?q=%keyword%",
         "home": "http://www.douban.com"
     },
-    "googleplus": {
+    "googleplus": { // google+
         "search": "https://plus.google.com/u/0/s/%keyword%",
         "home": "https://plus.google.com"
     },
@@ -1283,7 +1283,7 @@ var searchURL = {
         "search": "http://wiki.mbalib.com/wiki/Special:Search?search=%keyword%",
         "home": "http://wiki.mbalib.com/"
     },
-    "jianshu": {
+    "jianshu": { // 简书
         "search": "http://www.jianshu.com/search?q=%keyword%",
         "home": "http://www.jianshu.com"
     },
