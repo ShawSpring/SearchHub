@@ -305,3 +305,28 @@ background-image: url(./icons/bilibili.png);
 .ivsky{
     background-image: url(./icons/ivsky.gif);
 }
+
+.mdn{
+    background-image: url(./icons/mdn.png);
+}
+.w3ctools{
+    background-image: url(./icons/cssdict.ico);
+}
+.duokan{
+    background-image: url(./icons/duokan.png);
+}
+.xueqiu{
+    background-image: url(./icons/xueqiu.png);
+}
+.breadtrip{
+    background-image: url(./icons/breadtrip.png);
+}
+.tripadvisor{
+    background-image: url(./icons/TripAdvisor.png);
+}
+.devdocs{
+    background-image: url(./icons/search.png);
+}
+.cnblogs{
+    background-image: url(./icons/cnblogs.gif);
+}

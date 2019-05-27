@@ -239,7 +239,7 @@ var searchURL = {
         "home": "http://csdn.net"
     },
     "ziqiangxuetang": { //
-        "search": "", //无
+        "search": "https://code.ziqiangxuetang.com/django/django-tutorial.html", //无
         "home": "https://code.ziqiangxuetang.com/django/django-tutorial.html"
     },
     "facebook": { //
@@ -279,7 +279,24 @@ var searchURL = {
         "search": "http://search.ifeng.com/sofeng/search.action?q=%keyword%",
         "home": "http://ifeng.com"
     },
-
+    'mdn':{ //
+        "search":"https://developer.mozilla.org/zh-CN/search?q=%keyword%",
+        "home":"https://developer.mozilla.org/zh-CN/"
+    },
+    'w3ctools':{ //
+        "search":"https://123.w3cschool.cn/webtools", // 无
+        "home":"https://123.w3cschool.cn/webtools"
+    },
+    'devdocs':{ //
+        "search":"https://devdocs.io/", // 无
+        "home":"https://devdocs.io/"
+    },
+    
+    'cnblogs':{ //
+        "search":"https://zzk.cnblogs.com/s?t=b&w=%keyword%", 
+        "home":"https://www.cnblogs.com/"
+    },
+    
     "imdb": { //
         "search": "http://www.imdb.com/find?q=%keyword%",
         "home": "http://www.imdb.com"
@@ -298,7 +315,7 @@ var searchURL = {
         "home":"https://www.ivsky.com/"
     },
     "qianku": { //千库网
-        "search": "", // 需要汉字转拼音
+        "search": "https://588ku.com/", // 需要汉字转拼音
         "home": "https://588ku.com/"
     },
     "picjumbo":{
@@ -325,7 +342,7 @@ var searchURL = {
     },
 
     "vueapi": { //
-        "search": "",
+        "search": "https://cn.vuejs.org/v2/api/", // 无
         "home": "https://cn.vuejs.org/v2/api/"
     },
     "weibopic": { // 
@@ -353,8 +370,6 @@ var searchURL = {
         "search": "http://www.lofter.com/tag/%keyword%",
         "home": "http://www.lofter.com"
     },
-
-
 
     "bing": {
         "search": "http://www.bing.com/search?q=%keyword%",
@@ -481,14 +496,7 @@ var searchURL = {
         "search": "http://www.ted.com/search?cat=ss_all&q=%keyword%",
         "home": "http://www.ted.com"
     },
-    "jandan": {
-        "search": "http://jandan.net/search?q=%keyword%&cx=partner-pub-4352453996606420%3A9g4umvoigh7&cof=FORID%3A10&ie=UTF-8",
-        "home": "http://jandan.net"
-    },
-    "howcast": {
-        "search": "http://www.howcast.com/search?term=%keyword%",
-        "home": "http://www.howcast.com"
-    },
+  
     "xiachufang": { // 下厨房
         "search": "http://www.xiachufang.com/search/?keyword=%keyword%",
         "home": "http://www.xiachufang.com"
@@ -501,11 +509,8 @@ var searchURL = {
         "search": "https://so.mgtv.com/so/k-%keyword%",
         "home": "https://www.mgtv.com/"
     },
-    "500px": {
-        "search": "http://500px.com/search?q=%keyword%",
-        "home": "http://500px.com"
-    },
-    "duokan": {
+ 
+    "duokan": {  // 多看阅读
         "search": "http://book.duokan.com/search/%keyword%",
         "home": "http://book.duokan.com"
     },
@@ -513,30 +518,7 @@ var searchURL = {
         "search": "https://theartstack.com/search?utf8=✓&q=%keyword%",
         "home": "http://theartstack.com"
     },
-    "alexa": {
-        "search": "http://www.alexa.com/search?q=%keyword%",
-        "home": "http://www.alexa.com"
-    },
-    "fastcompany": {
-        "search": "https://google.com/search?q=site%3Awww.fastcompany.com+%keyword%",
-        "home": "http://www.fastcompany.com"
-    },
-    "fastcodesign": {
-        "search": "https://google.com/search?q=site%3Awww.fastcodesign.com+%keyword%",
-        "home": "http://www.fastcodesign.com"
-    },
-    "fastcocreate": {
-        "search": "https://google.com/search?q=site%3Awww.fastcocreate.com+%keyword%",
-        "home": "http://www.fastcocreate.com"
-    },
-    "fastcoexist": {
-        "search": "https://google.com/search?q=site%3Awww.fastcoexist.com+%keyword%",
-        "home": "http://www.fastcoexist.com"
-    },
-    "fastcolabs": {
-        "search": "https://google.com/search?q=site%3Awww.fastcolabs.com+%keyword%",
-        "home": "http://www.fastcolabs.com"
-    },
+ 
     "googleimage": {
         "search": "https://google.com/search?q=%keyword%&source=lnms&tbm=isch",
         "home": "http://203.116.165.138//imghp?sbi=1"
@@ -553,38 +535,16 @@ var searchURL = {
         "search": "https://google.com/search?as_sitesearch=processing.org&as_q=%keyword%",
         "home": "http://processing.org"
     },
-    "w3cschool": {
+    "w3cschool": { //
         "search": "https://www.w3cschool.cn/search?w=%keyword%",
         "home": "https://www.w3cschool.cn/"
-    },
-    "designboom": {
-        "search": "https://google.com/search?as_sitesearch=www.designboom.com&as_q=%keyword%",
-        "home": "http://www.designboom.com"
     },
     "wandoujia": { //
         "search": "http://www.wandoujia.com/search?key=%keyword%",
         "home": "http://www.wandoujia.com"
     },
-    "smashingmagazine": {
-        "search": "https://google.com/search?as_sitesearch=www.smashingmagazine.com/&as_q=%keyword%",
-        "home": "http://www.smashingmagazine.com"
-    },
-    "lonelyplanet": {
-        "search": "http://www.lonelyplanet.com/searchResult?q=%keyword%",
-        "home": "http://www.lonelyplanet.com"
-    },
-    "jiepang": {
-        "search": "http://jiepang.com/search/%keyword%",
-        "home": "http://jiepang.com"
-    },
-    "yixun": {
-        "search": "http://searchex.51buy.com/html?area=1&charset=utf-8&as=1&key=%keyword%",
-        "home": "http://51buy.com"
-    },
-    "ikandou": {
-        "search": "http://ikandou.com/search/happy/?q=%keyword%",
-        "home": "http://ikandou.com"
-    },
+   
+
     "kindle": { //
         "search": "http://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&url=node%3D116169071&field-keywords=%keyword%",
         "home": "http://www.amazon.cn/Kindle%E5%95%86%E5%BA%97/b?node=116087071"
@@ -593,22 +553,11 @@ var searchURL = {
         "search": "http://www.indiegogo.com/projects?utf8=%E2%9C%93&filter_title=%keyword%&search_submit=Search",
         "home": "http://www.indiegogo.com"
     },
-    "xueqiu": {
+    "xueqiu": { // 雪球 投资股票类的
         "search": "http://xueqiu.com/k?q=%keyword%",
         "home": "http://xueqiu.com"
     },
-    "datatang": {
-        "search": "http://www.datatang.com/s/data?k=%keyword%",
-        "home": "http://www.datatang.com"
-    },
-    "icpsr": {
-        "search": "http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies?q=%keyword%",
-        "home": "http://www.icpsr.umich.edu"
-    },
-    "typekit": {
-        "search": "https://typekit.com/search?utf8=✓&q=%keyword%",
-        "home": "https://typekit.com"
-    },
+   
     "artsy": {
         "search": "https://artsy.net/search?q=%keyword%",
         "home": "https://artsy.net"
@@ -617,26 +566,15 @@ var searchURL = {
         "search": "https://google.com/culturalinstitute/browse/%keyword%",
         "home": "https://www.google.com/culturalinstitute/"
     },
-    "ucdchina": {
-        "search": "http://ucdchina.com/search?query=%keyword%",
-        "home": "http://ucdchina.com"
-    },
     "arstechnica": {
         "search": "http://arstechnica.com/search/?query=%keyword%",
         "home": "http://arstechnica.com"
     },
-    "qqnews": {
+    "qqnews": { //
         "search": "http://www.soso.com/q?w=%keyword%&cid=qs.news.smb&site=news.qq.com&idx=f",
         "home": "http://news.qq.com"
     },
-    "branch": {
-        "search": "https://google.com/search?as_sitesearch=branch.com&as_q=%keyword%",
-        "home": "http://branch.com"
-    },
-    "wikivoyage": {
-        "search": "http://en.wikivoyage.org/w/index.php?search=%keyword%",
-        "home": "http://en.wikivoyage.org"
-    },
+   
     "wiktionary": {
         "search": "http://en.wiktionary.org/w/index.php?search=%keyword%",
         "home": "http://en.wiktionary.org"
@@ -661,15 +599,11 @@ var searchURL = {
         "search": "https://encrypted.google.com/search?as_sitesearch=wikileaks.org&as_q=%keyword%",
         "home": "https://wikileaks.org"
     },
-    "betalist": {
-        "search": "http://betalist.com/search?q=%keyword%",
-        "home": "http://betalist.com"
-    },
     "doubanalbum": {
         "search": "https://google.com/search?as_sitesearch=www.douban.com/photos/album&as_q=%keyword%",
         "home": "http://www.douban.com"
     },
-    "tripadvisor": {
+    "tripadvisor": { // 猫途鹰
         "search": "http://www.tripadvisor.com/Search?q=%keyword%",
         "home": "http://www.tripadvisor.com"
     },
@@ -677,22 +611,22 @@ var searchURL = {
         "search": "http://chanyouji.com/search/attractions?q=%keyword%",
         "home": "http://chanyouji.com"
     },
-    "breadtrip": {
+    "breadtrip": { // 面包旅行
         "search": "http://breadtrip.com/search/?q=%keyword%",
         "home": "http://breadtrip.com"
     },
-    "yyets": {
-        "search": "http://www.ys123.com/search/index?keyword=%keyword%",
-        "home": "http://www.rrys123.com"
+    "yyets": { // 含羞草
+        "search": "http://hxcav6.com/index.aspx?AgentID=23707",
+        "home": "http://hxcav6.com/index.aspx?AgentID=23707"
     },
-    "weipan": {
+    "weipan": { //
         "search": "http://vdisk.weibo.com/search/?type=public&keyword=%keyword%",
         "home": "http://vdisk.weibo.com"
     },
-    "shooter": {
-        "search": "http://www.shooter.cn/search2/%keyword%",
-        "home": "http://www.shooter.cn"
-    },
+    // "shooter": { // 射手网  已关闭
+    //     "search": "http://www.shooter.cn/search2/%keyword%",
+    //     "home": "http://www.shooter.cn"
+    // },
     "Quixey": {
         "search": "https://www.quixey.com/search/%keyword%",
         "home": "https://www.quixey.com"
