@@ -13,8 +13,15 @@
 </head>
 
 <body>
-    <div class="container-1">
-        <div class="catalog flex-item">
+        <div class="searchbox">
+                <i class="icon-search"></i>
+                <input type="text" placeholder="搜索" id="search-sth">
+            </div>
+    <div class="container">
+        <div class="occupy grid-item">
+            <!-- 空的 grid-item 占位之用 -->
+        </div>
+        <div class="catalog grid-item">
             <span class="catalog-title">阅读</span>
             <div class="item">
                 <a href="#"> <i class='item-icon doubanbook'></i><span>豆瓣读书</sapn></a>
@@ -47,11 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="searchbox flex-item">
-            <i class="icon-search"></i>
-            <input type="text" placeholder="搜索" id="search-sth">
-        </div>
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">资源</span>
             <div class="item">
                 <a href="#"> <i class='item-icon btdx'></i><span>比特大雄</sapn></a>
@@ -75,9 +78,9 @@
             </div>
         </div>
 
-    </div>
-    <div class="container">
-        <div class="catalog flex-item">
+
+
+        <div class="catalog grid-item">
             <span class="catalog-title">编程</span>
 
             <div class="item">
@@ -99,15 +102,14 @@
                 <a href="#"> <i class='item-icon stackoverflow'></i><span>Stack Overflow</sapn></a>
             </div>
 
-
-
             <div class="item">
                 <a href="#"> <i class='item-icon codepen'></i><span>Code Pen</sapn></a>
             </div>
-            <div class="item">
-                <a href="#"> <i class='item-icon apisio'></i><span>APIs.io</sapn></a>
-            </div>
+
             <div class="extend-items">
+                <div class="item">
+                    <a href="#"> <i class='item-icon apisio'></i><span>APIs.io</sapn></a>
+                </div>
                 <div class="item">
                     <a href="#"> <i class='item-icon appledev'></i><span>Apple developer</sapn></a>
                 </div>
@@ -116,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">文档or工具</span>
             <div class="item">
                 <a href="#"> <i class='item-icon mdn'></i><span>mdn</sapn></a>
@@ -140,10 +142,11 @@
             <div class="item">
                 <a href="#"> <i class='item-icon w3ctools'></i><span>W3C工具库</sapn></a>
             </div>
-            <div class="item">
-                <a href="#"> <i class='item-icon tools'></i><span>在线工具</sapn></a>
-            </div>
+
             <div class="extend-items">
+                <div class="item">
+                    <a href="#"> <i class='item-icon tools'></i><span>在线工具</sapn></a>
+                </div>
                 <div class="item">
                     <a href="#"> <i class='item-icon vueapi'></i><span>vue api</sapn></a>
                 </div>
@@ -152,7 +155,7 @@
                 </div>
             </div>
         </div>
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">视频</span>
             <div class="item">
                 <a href="#"> <i class='item-icon bilibili'></i><span>Bilibili</sapn></a>
@@ -193,7 +196,7 @@
                 </div>
             </div>
         </div>
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">知识</span>
             <div class="item">
                 <a href="#"> <i class='item-icon zhihu'></i><span> 知乎</sapn></a>
@@ -229,7 +232,7 @@
 
         </div>
 
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">社交社区</span>
             <div class="item">
                 <a href="#"> <i class='item-icon douban'></i><span>豆瓣</sapn></a>
@@ -266,7 +269,7 @@
             </div>
         </div>
 
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">音乐or图片</span>
             <div class="item">
                 <a href="#"> <i class='item-icon music163'></i><span>网易音乐</sapn></a>
@@ -313,7 +316,7 @@
             </div>
         </div>
 
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">新闻</span>
             <div class="item">
                 <a href="#"> <i class='item-icon news163'></i><span>网易新闻</sapn></a>
@@ -346,7 +349,7 @@
             </div>
         </div>
 
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">购物</span>
             <div class="item">
                 <a href="#"> <i class='item-icon taobao'></i><span>淘宝</sapn></a>
@@ -377,7 +380,7 @@
         </div>
 
 
-        <div class="catalog flex-item">
+        <div class="catalog grid-item">
             <span class="catalog-title">其它</span>
             <div class="item">
                 <a href="#"> <i class='item-icon steam'></i><span>Steam</sapn></a>

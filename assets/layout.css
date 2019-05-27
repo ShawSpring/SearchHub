@@ -1,41 +1,14 @@
-.container-1 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.flex-item {
-    flex-basis: auto;
-}
-
-/*                searchbox                  */
-.searchbox {
-    align-self: center;
-    margin: 0 120px;
-}
-
-@media screen and (max-width:1000px) {
-    .searchbox {
-        margin: 0;
-    }
-}
-
 /*                  extend-items 隐藏 动态显示                          */
 .catalog {
-    position: relative; /* 作为  。extend-items的容器 */
+    position: relative;
+    /* 作为  。extend-items的容器 */
 }
 
 .extend-items {
-    width:calc(100% + 2px); /*  要让它随着父元素 .catalog变动而变动 2px是父元素左右边框的宽度*/
+    width: calc(100% + 2px);
+    /*  要让它随着父元素 .catalog变动而变动 2px是父元素左右边框的宽度*/
     display: none;
-    margin:0;
+    margin: 0;
 }
 
 .catalog:hover .extend-items {
@@ -54,7 +27,91 @@
     border-top-right-radius: 0;
     margin-top: -10px;
 }
-.catalog:hover{
+
+.catalog:hover {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+
+
+
+/*  布局 */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+    grid-row-gap: 2em;
+}
+
+/*  指定占位项  所在的位置 为第2和第5根网格线 之间 */
+.occupy{
+    grid-column: 2 / 5;
+    grid-row: 1;
+}
+
+
+.searchbox {
+   position: fixed;
+   left:50%;
+   top: 100px;
+   transform: translate(-50%,0);
+   z-index: 2;
+}
+
+
+.grid-item {}
+
+
+/*  动态布局 */
+@media screen and (max-width:900px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    }
+
+    .occupy {
+      grid-column: 2 / 4;
+    
+    }
+  
+
+}
+
+@media screen and (max-width:720px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        margin-top:60px; 
+
+    }
+
+    .occupy {
+        position: absolute; /* 让它不在 占位 */
+
+      }
+    
+    .searchbox{
+        top: 10px;
+        width: 60%;
+    }
+   
+}
+
+@media screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .searchbox{
+        width: 80%;
+    }
+  
+}
+@media screen and (max-width:380px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
 }

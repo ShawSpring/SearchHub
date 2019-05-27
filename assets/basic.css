@@ -11,7 +11,7 @@ body {
 
 /* searchbox style */
 .searchbox {
-    width: 28em;
+    width: 45%;
     height: 2em;
 
 }
@@ -54,7 +54,6 @@ body {
     border: 1px solid #343434;
     box-shadow: 4px 8px 8px 0 rgba(30, 50, 30, 0.4);
     border-radius: 5px;
-    margin: 1.5em 2em;
     /* transition: all 0.2s ease; */
 
 }
